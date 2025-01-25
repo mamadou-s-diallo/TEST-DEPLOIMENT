@@ -1,0 +1,430 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #005f73; /* Bleu sombre */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section "hero" */
+.hero {
+    background-color: #94d2bd; /* Vert doux */
+    color: #005f73;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #005f73;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #0a9396;
+}
+
+/* Section "services" */
+.services {
+    padding: 2rem 1rem;
+    background-color: #e9f5f3; /* Fond clair */
+}
+
+.services h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #005f73;
+}
+
+.service {
+    background-color: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.service h4 {
+    font-size: 1.4rem;
+    color: #0a9396;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section "Pourquoi nous choisir" */
+.pourquoi_nous {
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.pourquoi_nous h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #005f73;
+}
+
+.pourquoi_nous ul {
+    max-width: 800px;
+    margin: auto;
+    list-style-type: square;
+    padding: 0 1rem;
+}
+
+.pourquoi_nous ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #0a9396;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Styles pour la page de présentation */
+
+/* Section principale */
+main {
+    padding: 2rem 1rem;
+    background-color: #f4f4f9; /* Fond clair */
+}
+
+/* Section "À propos" */
+.a_propos_nous {
+    background-color: #e9f5f3; /* Fond léger */
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact_nous {
+    background-color: #e9f5f3; /* Fond léger */
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+
+.a_propos_nous h2 {
+    color: #005f73;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact_nous h2 {
+    color: #005f73;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact_nous p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+.a_propos_nous p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Section "Mission", "Vision", "Valeurs" */
+.mission, .vision, .valeurs {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.mission h3, .vision h3, .valeurs h3 {
+    color: #005f73;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.mission p, .vision p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.valeurs ul {
+    padding-left: 1.5rem;
+}
+
+.valeurs ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Section "Témoignages" */
+.temoignages {
+    background-color: #e9f5f3; /* Fond léger */
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.temoignages h3 {
+    color: #005f73;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.temoignages blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid #0a9396;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le lien actif dans le menu */
+nav ul li .active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0a9396;
+}
+
+
+
+
+
+/* Section des informations de contact */
+.contact-info {
+    background-color: #e9f5f3; /* Fond doux */
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.contact-info h3 {
+    color: #005f73;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+
+
+/* Formulaire de contact */
+.formulaire_contact {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.formulaire_contact .formulaire_groupe {
+    margin-bottom: 1.5rem;
+}
+
+.formulaire_contact label {
+    font-size: 1.1rem;
+    color: #005f73;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.formulaire_contact input,
+.formulaire_contact select,
+.formulaire_contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire_contact input:focus,
+.formulaire_contact select:focus,
+.formulaire_contact textarea:focus {
+    border-color: #0a9396;
+    outline: none;
+}
+
+.formulaire_contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.formulaire_contact .btn {
+    display: inline-block;
+    background-color: #005f73;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulaire_contact .btn:hover {
+    background-color: #0a9396;
+}
+
+.image_text {
+    display: flex; /* Aligne les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 10px; /* Espacement entre le logo et le texte */
+}
+
+
+
+
+.logo {
+    width: 50px; /* Taille du logo */
+    height: auto;
+}
+
+
+.nom_entreprise {
+    font-size: 24px;
+    
+  
+font-weight: bold;
+    color: #fff; /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+}
+
+
+.service img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+
+
+.photo_equipe {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+
+#slogan{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    font-style: italic;
+    font-weight: bold;
+}

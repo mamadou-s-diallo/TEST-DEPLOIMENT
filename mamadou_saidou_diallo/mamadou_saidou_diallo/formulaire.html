@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CrediFlex</title>
+    <link rel="stylesheet" href="css\css.css">
+    <script type="text/javascript" src="javascripts\js.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <table">
+                <tr>
+                    <td>
+                        <div class="image_text">
+                            <img src="image\logo.jpg" alt="Logo de l'entreprise" class="logo">
+                            <h1 class="nom_entreprise">CrediFlex</h1>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="slogan">
+                            Un prêt, un pas vers vos rêves.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="acceuil.html">Accueil</a></li>
+                    <li><a href="presentaion.html">Présentation</a></li>
+                    <li><a href="formulaire.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact_nous">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou demande, n'hésitez pas à remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
+            
+            <form action="#" method="post" id="formulaire" class="formulaire_contact">
+                <div class="formulaire_groupe">
+                    <label for="nom_prenom">Nom et Prénom <span>*</span></label>
+                    <input type="text" id="nom_prenom" name="nom_prenom" placeholder="Votre nom et prénom">
+                    <div>
+                        <p id="er_nm" style="color: red;font-size: 75%;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="formulaire_groupe">
+                    <label for="civilite">Civilité <span>*</span></label>
+                    <select id="civilite" name="civilite">
+                        <option value="">Sélectionnez</option>
+                        <option value="mr">Mr</option>
+                        <option value="mme">Mme</option>
+                    </select>
+                    <div>
+                        <p id="er_cv"  style="color: red;font-size: 75%;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="formulaire_groupe">
+                    <label for="email">Adresse email <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Votre adresse email">
+                    <div>
+                        <p id="er_ml"  style="color: red;font-size: 75%;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="formulaire_groupe">
+                    <label for="commentaire">Commentaire <span>*</span></label>
+                    <textarea id="commentaire" name="commentaire" placeholder="Votre message"></textarea>
+                    <div>
+                        <p id="er_com"  style="color: red;font-size: 75%;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="formulaire_groupe">
+                    <button id="verifier" type="submit" class="btn" onclick="soumettre(event)">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CrediFlex. Tous droits réservés. Merci de votre visite</p>
+            <p><a href="mentions-legales.html">Mentions légales</a></p>
+        </div>
+    </footer>
+</body>
+</html>
